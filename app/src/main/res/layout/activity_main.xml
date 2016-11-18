@@ -38,10 +38,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/poll"
+        android:id="@+id/imageViewPoll"
         android:layout_below="@+id/editTextZIP"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/imageViewPoll"/>
+        android:layout_marginTop="42dp" />
 
     <Button
         android:layout_width="wrap_content"
