@@ -13,10 +13,13 @@ import butterknife.ButterKnife;
 public class InfoActivity extends AppCompatActivity {
     @Bind(R.id.zipView) TextView mZipView;
     @Bind(R.id.infoView) ListView mInfoView;
+    @Bind(R.id.districtView) ListView mDistrictView;
+
 
     private String[] localPolInfo = new String [] {
             "Jane Doe", "Jahn Doe", "Susan Smith", "Michael Rogers"
     };
+
     private Integer [] districtNumber = new Integer [] {
             12,34,6,8
     };
@@ -31,6 +34,8 @@ public class InfoActivity extends AppCompatActivity {
         mZipView.setText("Political representatives near ZIP code " + zip +" include:" );
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, localPolInfo);
         mInfoView.setAdapter(adapter);
+        ArrayAdapter adapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, districtNumber);
+        mDistrictView.setAdapter(adapter2);
 
     }
 }

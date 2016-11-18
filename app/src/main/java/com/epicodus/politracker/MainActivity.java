@@ -12,9 +12,12 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-    @Bind(R.id.editTextZIP) EditText mEditTextZIP;
-    @Bind(R.id.buttonZIP) Button mButtonZIP;
-    @Bind(R.id.textAbout) TextView mAboutView;
+    @Bind(R.id.editTextZIP)
+    EditText mEditTextZIP;
+    @Bind(R.id.buttonZIP)
+    Button mButtonZIP;
+    @Bind(R.id.textAbout)
+    TextView mAboutView;
 
 
     @Override
