@@ -10,23 +10,27 @@
     tools:context="com.epicodus.politracker.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Please Enter your ZIP code:"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Learn More about PoliTracker"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/textAbout"
+        android:clickable="true"
+        android:contextClickable="true"/>
+
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginTop="39dp"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:maxLines="1"
+        android:inputType="number"
+        android:gravity="center"
+        android:hint="Please enter your ZIP here"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textAbout"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
