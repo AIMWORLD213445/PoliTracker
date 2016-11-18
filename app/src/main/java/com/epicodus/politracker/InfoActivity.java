@@ -46,7 +46,7 @@ public class InfoActivity extends AppCompatActivity {
         mInfoView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         @Override
             public void onItemClick(AdapterView<?>adapterView, View view, int position, long l) {
-                Toast.makeText(InfoActivity.this,"Get to know your Representatives!",Toast.LENGTH_LONG).show();
+                Toast.makeText(InfoActivity.this,"Get to know your Representatives!",Toast.LENGTH_SHORT).show();
             };
         });
     }
