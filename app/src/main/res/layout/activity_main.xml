@@ -11,49 +11,49 @@
     tools:context="com.epicodus.politracker.MainActivity">
 
     <TextView
-    android:textSize="20dp"
+    android:textSize="20sp"
+    android:clickable="true"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Learn More about PoliTracker"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
-    android:id="@+id/textAbout"
-        android:clickable="true"
-        />
+    android:id="@+id/textAbout" />
 
 
     <EditText
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
         android:maxLines="1"
         android:inputType="number"
         android:gravity="center"
         android:hint="Please enter your ZIP here"
         android:layout_marginTop="37dp"
         android:layout_below="@+id/textAbout"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTextZIP"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
         android:src="@drawable/poll"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/editTextZIP"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageViewPoll"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit ZIP"
-        android:id="@+id/button"
-        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignBottom="@+id/imageViewPoll"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryLight"
+        android:id="@+id/buttonZIP"/>
 
 
 </RelativeLayout>
