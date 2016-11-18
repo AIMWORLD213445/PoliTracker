@@ -35,7 +35,9 @@
             android:layout_weight="0.5"
             android:layout_below="@+id/textlabelOne"
             android:layout_marginLeft="170dp"
-            android:layout_marginTop="60dp" />
+            android:layout_marginTop="60dp"
+            android:textColor="@color/colorPrimaryText"
+            android:clickable="true"/>
 
     <TextView
         android:text="District Number: "
@@ -52,6 +54,7 @@
             android:id="@+id/districtView"
             android:layout_weight="0.5"
             android:layout_marginRight="170dp"
-            android:layout_alignTop="@+id/infoView" />
+            android:layout_alignTop="@+id/infoView"
+            android:clickable="true"/>
 
 </RelativeLayout>
