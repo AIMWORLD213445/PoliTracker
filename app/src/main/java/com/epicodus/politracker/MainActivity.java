@@ -12,12 +12,9 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-    @Bind(R.id.editTextZIP)
-    EditText mEditTextZIP;
-    @Bind(R.id.buttonZIP)
-    Button mButtonZIP;
-    @Bind(R.id.textAbout)
-    TextView mAboutView;
+    @Bind(R.id.editTextZIP) EditText mEditTextZIP;
+    @Bind(R.id.buttonZIP) Button mButtonZIP;
+    @Bind(R.id.textAbout) TextView mAboutView;
 
 
     @Override
@@ -25,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
         mAboutView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
         mButtonZIP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String zip = mEditTextZIP.getText().toString();
                 Intent intent = new Intent(MainActivity.this, InfoActivity.class);
+                intent.putExtra("zip", zip);
                 startActivity(intent);
             }
 

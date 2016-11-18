@@ -18,6 +18,7 @@
     android:text="Learn More about PoliTracker"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
+    android:textColor="@color/colorAccent"
     android:id="@+id/textAbout" />
 
 
