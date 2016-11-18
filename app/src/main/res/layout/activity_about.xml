@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PoliTracker is a new tool dedicated to facillitating an informed citizenry. In these times, and in all democracies, it is up to us to advocate for the change we want to see in the world."
+        android:text="PoliTracker is a new tool dedicated to facillitating an informed citizenry. In these times, and in all democracies, it is up to us to advocate for the change we want to see in the world. Our hope is that we can all hold the political system more accountable by accessing crucial information. Who Represents you? What do they stand for? Find out with PoliTracker!"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_marginTop="47dp"

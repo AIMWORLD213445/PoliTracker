@@ -23,8 +23,8 @@ public class InfoActivity extends AppCompatActivity {
             "Jane Doe", "John Doe", "Susan Smith", "Michael Rogers"
     };
 
-    private Integer [] districtNumber = new Integer [] {
-            12,34,6,8
+    private String [] districtNumber = new String [] {
+            "District 12","District 34","Senator","Senator"
     };
 
     @Override
