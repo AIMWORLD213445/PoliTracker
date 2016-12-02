@@ -37,11 +37,11 @@ public class InfoActivity extends AppCompatActivity {
 
         mZipView.setText("Political representatives near ZIP code " + zip +" include:" );
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, localPolInfo);
-        mInfoView.setAdapter(adapter);
+        ArrayAdapter localPolInfoAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, localPolInfo);
+        mInfoView.setAdapter(localPolInfoAdapter);
 
-        ArrayAdapter adapter2 = new ArrayAdapter(this, android.R.layout.simple_list_item_1, districtNumber);
-        mDistrictView.setAdapter(adapter2);
+        ArrayAdapter districtNumberAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, districtNumber);
+        mDistrictView.setAdapter(districtNumberAdapter);
 
         mInfoView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         @Override

@@ -11,7 +11,7 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Bind(R.id.editTextZIP)
     EditText mEditTextZIP;
     @Bind(R.id.buttonZIP)
@@ -26,23 +26,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        mAboutView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mButtonZIP.setOnClickListener(this);
+        mAboutView.setOnClickListener(this);
+    }
+
+
+        @Override
+        public void onClick (View v){
+            if (v == mAboutView) {
                 Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(intent);
             }
-        });
-
-        mButtonZIP.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            if (v == mButtonZIP) {
                 String zip = mEditTextZIP.getText().toString();
                 Intent intent = new Intent(MainActivity.this, InfoActivity.class);
                 intent.putExtra("zip", zip);
                 startActivity(intent);
             }
-
-        });
+        }
     }
-}
+
+
